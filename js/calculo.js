@@ -21,12 +21,6 @@ function diluicao(){
 	volume_inicial = parseFloat(document.getElementById('volume_inicial').value);
 	volume_final = parseFloat(document.getElementById('volume_final').value);
 
-	if isNaN(concentracao_inicial){
-		var1 = concentracao_final * volume_final;
-		result = var1/volume_inicial;
-	}
-
-	// alert(massa_soluto_diluicao/volume_solucao_diluicao);
 	document.getElementById('result').innerHTML = result;
 	document.getElementById("popup").style.visibility = "visible";
 }	
