@@ -21,7 +21,22 @@ function diluicao(){
 	volume_inicial = parseFloat(document.getElementById('volume_inicial').value);
 	volume_final = parseFloat(document.getElementById('volume_final').value);
 
-	document.getElementById('result').innerHTML = result;
+	if (isNaN(concentracao_inicial) == true){
+		document.getElementById('result').innerHTML = (volume_final*concentracao_final)/volume_inicial;
+	}
+
+	else if (isNaN(concentracao_final) == true){
+		document.getElementById('result').innerHTML = (concentracao_inicial*volume_inicial)/volume_final;
+	}
+
+	else if (isNaN(volume_inicial) == true){
+		document.getElementById('result').innerHTML = (concentracao_final*volume_final)/concentracao_inicial;
+	}
+
+	else if (isNaN(volume_final) == true){
+		document.getElementById('result').innerHTML = (concentracao_inicial*volume_inicial)/concentracao_final;
+	}
+
 	document.getElementById("popup").style.visibility = "visible";
 }	
 
