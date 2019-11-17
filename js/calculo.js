@@ -1,3 +1,4 @@
+// Essa função recebe os valores do primeiro formulário e realiza o cálculo de concentração molar
 function concentracao_molar(){
 	mols_soluto = parseFloat(document.getElementById('mols_soluto').value);
 	volume_solucao = parseFloat(document.getElementById('volume_solucao').value);
@@ -6,6 +7,7 @@ function concentracao_molar(){
 	document.getElementById("popup").style.visibility = "visible";
 }
 
+// Essa função recebe os valores do terceiro formulário e realiza o cálculo de concentração comum
 function concentracao_comum(){
 	massa_soluto = parseFloat(document.getElementById('massa_soluto').value);
 	volume_solucao_comum = parseFloat(document.getElementById('volume_solucao_comum').value);
@@ -15,6 +17,7 @@ function concentracao_comum(){
 }	
 
 
+// Essa função recebe os valores do segundo formulário e realiza o cálculo de diluição
 function diluicao(){
 	concentracao_inicial = parseFloat(document.getElementById('concentracao_inicial').value);
 	concentracao_final = parseFloat(document.getElementById('concentracao_final').value);
