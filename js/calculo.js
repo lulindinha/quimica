@@ -46,3 +46,4 @@ function diluicao(){
 function fechar(){
 	document.getElementById("popup").style.visibility = "hidden";
 }
+

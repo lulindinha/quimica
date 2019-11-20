@@ -93,7 +93,7 @@
                 <div class="col-lg-12">
                     <div class="breadcrumb_iner text-center">
                         <div class="breadcrumb_iner_item">
-                            <h2>Calculadora</h2>
+                            <h2>Converter valores</h2>
                         </div>
                     </div>
                 </div>
@@ -128,26 +128,25 @@
                                     <div class="col-12">
                                         <div class="form-group">
                                         
-                                            <input class="form-control" name="valor_massa" type="text" placeholder="quantidade de massa" onblur="this.placeholder" id="valor_massa">
-
-                                            <div class="dropdown">
-                                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="massa_unidade">Un. de massa</a>
-
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                <a class="dropdown-item" value='kg'>kg</a>
-                                                <a class="dropdown-item" value='hg'>hg</a>
-                                                <a class="dropdown-item" value='dag'>dag</a>
-                                                <a class="dropdown-item" value='dg'>dg</a>
-                                                <a class="dropdown-item" value='cg'>cg</a>
-                                                <a class="dropdown-item" value='mg'>mg</a>
-                                            </div>
+                                        <input class="form-control" name="valor_massa" type="text" placeholder="Quantidade de massa" onblur="this.placeholder" id="valor_massa">
+                                        </div>
+                                        <div class="">
+                                            <label for="exampleFormControlSelect1">Unidade de massa</label>
+                                            <select id="massa_unidade">
+                                              <option value='kg'>kg</option>
+                                              <option value='hg'>hg</option>
+                                              <option value='dag'>dag</option>
+                                              <option value='dg'>dg</option>
+                                              <option value='mg'>mg</option>
+                                            </select>
                                         </div>
                                     </div> 
-                                        </div>
                                 </div>
-                            </form>
-                            <br/>
-                        <button onclick="conversão_unidade_massa()" class="btn_1"> Calcular</button>
+                        
+                         </form>
+                        
+
+                        <button onclick="conversao_unidade_massa()" class="btn_1"> Calcular</button>
                     </div>
                 </div>
 
@@ -164,26 +163,24 @@
                                 <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
-            
-                                        <input class="form-control" name="valor_volume" type="text" placeholder="Volume da solução" onblur="thus.placeholder" id="valor_volume">
-
-                                        <div class="dropdown">
-                                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="volume_unidade">Un. de volume</a>
-
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                <a class="dropdown-item" value='kg'>kl</a>
-                                                <a class="dropdown-item" value='hg'>hl</a>
-                                                <a class="dropdown-item" value='dag'>dal</a>
-                                                <a class="dropdown-item" value='dg'>dl</a>
-                                                <a class="dropdown-item" value='cg'>cl</a>
-                                                <a class="dropdown-item" value='mg'>ml</a>
-                                            </div>
-                                        </div>
+                                
+                                        <input class="form-control" name="valor_volume" type="text" placeholder="Volume da solução" onblur="this.placeholder" id="valor_volume">
+<br/>
+                                        <div class="form-group">
+                                                <label for="exampleFormControlSelect1">Unidade de volume</label>
+                                                <select >
+                                                  <option value='kl'>kg</option>
+                                                  <option value='hl'>hg</option>
+                                                  <option value='dal'>dag</option>
+                                                  <option value='dl'>dg</option>
+                                                  <option value='ml'>mg</option>
+                                                </select>
+                                              </div>
                                         </div>
                                     </div>
                                 </div>
                             </form>
-                        <button onclick="conversão_unidade_volume()" class="btn_1"> Calcular</button>
+                        <button onclick="conversao_unidade_volume()" class="btn_1"> Calcular</button>
                     </div>
                 </div>
 
@@ -241,6 +238,7 @@
     <script src="js/custom.js"></script>
     <!-- Link para JavaScript com as funções dos cálculos -->
     <script src="js/calculo.js"></script>
+    <script scr="js/conversao_de_unidades.js"></script>
 
 </body>
 
