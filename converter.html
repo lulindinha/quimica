@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CalChemistry - Calculadora</title>
+    <title>CalChemistry - Conversor</title>
     <link rel="icon" href="img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -53,7 +53,7 @@
                         </button>
 
                         <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
-                           <ul class="navbar-nav">
+                            <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link" href="index.html">Home</a>
                                 </li>
@@ -67,6 +67,7 @@
                                     <a class="nav-link" href="converter.html">Conversor</a>
                                 </li>
                             </ul>
+
                        
                     </nav>
                 </div>
@@ -115,124 +116,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_pricing_part">
-                        <img src="img/icon/feature_icon_3.svg" alt="">
-                        <p>Concentração molar</p>
-                        <h3><span>mol/L</span></h3>
-                        <hr><br/>
-
-                        <!-- Formulário para calcular concentração molar -->
-                         <form>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                        
-                                            <input class="form-control" name="massa" type="text" placeholder="Mols do soluto" onblur="thus.placeholder" id="mols_soluto">
-                                        </div>
-                                    </div>
-                                </div>
-
-                             <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-            
-                                        <input class="form-control" name="massa" type="text" placeholder="Volume da solução" onblur="thus.placeholder" id="volume_solucao">
-                                    </div>
-                                </div>
-                            </div>
-                            </form>
-                            <br/>
-
-                        
-                        <button onclick="concentracao_molar()" class="btn_1"> Calcular</button>
-
-                        <p id="saida_comum"></p>
-
-                    </div>
-                </div>
-                 <div class="col-lg-3 col-sm-6">
-                    <div class="single_pricing_part">
-                        <img src="img/icon/feature_icon_2.svg" alt="">
-                        <p>Diluição</p>
-                        <h3><span>g/L</span></h3>
-                        <hr> <br/>
-                        <!-- Formulário para calcular diluição -->
-
-                            <form>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                        
-                                            <input class="form-control" name="massa" type="text" placeholder="Concentração inicial" id="concentracao_inicial" onblur="thus.placeholder" data-toggle="tooltip" data-placement="right" title="Caso o valor for uma icógnita digite uma letra">
-                                        </div>
-                                    </div>
-                                </div>
-                             <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        
-                                        <input class="form-control" name="massa" type="text" placeholder="Concentração final" id="concentracao_final" onblur="thus.placeholder"  data-toggle="tooltip" data-placement="right" title="Caso o valor for uma icógnita digite uma letra">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        
-                                        <input class="form-control" name="massa" type="text" placeholder="Volume inicial" id="volume_inicial" onblur="this.placeholder" data-toggle="tooltip" data-placement="right" title="Caso o valor for uma icógnita digite uma letra">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        
-                                        <input class="form-control" name="massa" type="text" placeholder="Volume final" id="volume_final" onblur="thus.placeholder"  data-toggle="tooltip" data-placement="right" title="Caso o valor for uma icógnita digite uma letra">
-                                    </div>
-                                </div>
-                            </div>
-                            </form>
-                            <br/>
-                       <button onclick="diluicao()" class="btn_1"> Calcular</button>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_pricing_part">
-                        <img src="img/icon/feature_icon_1.svg" alt="">
-                        <p>Concentração comum</p>
-                        <h3><span>g/L</span></h3>
-                        <hr><br/>
-
-                             <!-- Formulário para calcular concentração comum -->
-
-                            <form>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                        
-                                            <input class="form-control" name="massa" type="text" placeholder="Massa do soluto" onblur="thus.placeholder" id="massa_soluto">
-                                        </div>
-                                    </div>
-                                </div>
-
-                             <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-            
-                                        <input class="form-control" name="massa" type="text" placeholder="Volume da solução" onblur="thus.placeholder" id="volume_solucao_comum">
-                                    </div>
-                                </div>
-                            </div>
-                            </form>
-                            <br/>
-
-                        <button onclick="concentracao_comum()" class="btn_1"> Calcular</button>
-                    </div>
-                </div>
-
-<<<<<<< HEAD
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_pricing_part">
-                        <img src="img/icon/feature_icon_1.svg" alt="">
+                        <img src="img/molecular-structure.svg" alt="">
                         <p>Conversão de unidades</p>
                         <h3><span>g/L</span></h3>
                         <hr><br/>
@@ -246,18 +130,16 @@
                                         
                                             <input class="form-control" name="valor_massa" type="text" placeholder="quantidade de massa" onblur="this.placeholder" id="valor_massa">
 
-                                        <div class="btn-group">
-                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="volume_unidade">
-                                                Uni. volume
-                                            </button>
+                                            <div class="dropdown">
+                                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="massa_unidade">Un. de massa</a>
 
-                                            <div class="dropdown-menu">
-                                                <option class="dropdown-item" value='kg'>kg</option>
-                                                <option class="dropdown-item" value='hg'>hg</option>
-                                                <option class="dropdown-item" value='dag'>dag</option>
-                                                <option class="dropdown-item" value='dg'>dg</option>
-                                                <option class="dropdown-item" value='cg'>cg</option>
-                                                <option class="dropdown-item" value='mg'>mg</option>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" value='kg'>kg</a>
+                                                <a class="dropdown-item" value='hg'>hg</a>
+                                                <a class="dropdown-item" value='dag'>dag</a>
+                                                <a class="dropdown-item" value='dg'>dg</a>
+                                                <a class="dropdown-item" value='cg'>cg</a>
+                                                <a class="dropdown-item" value='mg'>mg</a>
                                             </div>
                                         </div>
                                     </div> 
@@ -271,7 +153,7 @@
 
                 <div class="col-lg-3 col-sm-6">
                     <div class="single_pricing_part">
-                        <img src="">
+                        <img src="img/mulecule.svg">
                         <p>Conversão de unidades</p>
                         <h3><span>g/l</span></h3>
                         <hr><br>
@@ -285,28 +167,24 @@
             
                                         <input class="form-control" name="valor_volume" type="text" placeholder="Volume da solução" onblur="thus.placeholder" id="valor_volume">
 
-                                        <div class="btn-group">
-                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="volume_unidade">
-                                                Uni. volume
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                    <option class="dropdown-item" value='hg'>hl</option>
-                                                    <option class="dropdown-item" value='dag'>dal</option>
-                                                    <option class="dropdown-item" value='dg'>dl</option>
-                                                    <option class="dropdown-item" value='cg'>cl</option>
-                                                    <option class="dropdown-item" value='mg'>ml</option>
+                                        <div class="dropdown">
+                                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="volume_unidade">Un. de volume</a>
+
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" value='kg'>kl</a>
+                                                <a class="dropdown-item" value='hg'>hl</a>
+                                                <a class="dropdown-item" value='dag'>dal</a>
+                                                <a class="dropdown-item" value='dg'>dl</a>
+                                                <a class="dropdown-item" value='cg'>cl</a>
+                                                <a class="dropdown-item" value='mg'>ml</a>
                                             </div>
                                         </div>
-                                     
+                                        </div>
                                     </div>
-                                </div>
                                 </div>
                             </form>
                         <button onclick="conversão_unidade_volume()" class="btn_1"> Calcular</button>
                     </div>
-=======
-                
->>>>>>> 1e232c6e90c443abedbcc0ebe295b7a947ad7075
                 </div>
 
             </div>
@@ -315,6 +193,7 @@
         <img src="img/animate_icon/Shape-1.png" alt="" class="feature_icon_1">
         <img src="img/animate_icon/shape.png" alt="" class="feature_icon_4">
     </section>
+    
 
     <!--::footer_part start::-->
  <footer class="footer_part">
