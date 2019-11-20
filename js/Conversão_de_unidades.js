@@ -19,15 +19,15 @@ function conversão_unidade_massa(){
 function conversão_unidade_volume(){
 	valor_volume = parseFloat(document.getElementById('valor_volume').value);
 	var unidade = document.getElementById("volume_unidade");
-	if (volume_unidade.options[volume_unidade.selectedIndex].value == 'kg') {
+	if (volume_unidade.options[volume_unidade.selectedIndex].value == 'hl') {
 		calculo = (valor_massa * 1000);
-	} if (volume_unidade.options[volume_unidade.selectedIndex].value == 'hg'){
+	} if (volume_unidade.options[volume_unidade.selectedIndex].value == 'dl'){
 		calculo = (valor_massa * 100);
-	} if (volume_unidade.options[volume_unidade.selectedIndex].value == 'dag'){
+	} if (volume_unidade.options[volume_unidade.selectedIndex].value == 'dal'){
 		calculo = (valor_massa * 10);
-	} if (volume_unidade.options[volume_unidade.selectedIndex].value == 'cg'){
+	} if (volume_unidade.options[volume_unidade.selectedIndex].value == 'cl'){
 		calculo = (valor_massa / 100);
-	} if (volume_unidade.options[volume_unidade.selectedIndex].value == 'mg'){
+	} if (volume_unidade.options[volume_unidade.selectedIndex].value == 'ml'){
 		calculo = (valor_massa / 1000);
 	}
 	document.getElementById('result').innerHTML = calculo;

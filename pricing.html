@@ -242,16 +242,18 @@
                                         
                                             <input class="form-control" name="valor_massa" type="text" placeholder="quantidade de massa" onblur="this.placeholder" id="valor_massa">
 
-                                            <div class="dropdown">
-                                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="massa_unidade">Un. de massa</a>
+                                        <div class="btn-group">
+                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="volume_unidade">
+                                                Uni. volume
+                                            </button>
 
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                <a class="dropdown-item" value='kg'>kg</a>
-                                                <a class="dropdown-item" value='hg'>hg</a>
-                                                <a class="dropdown-item" value='dag'>dag</a>
-                                                <a class="dropdown-item" value='dg'>dg</a>
-                                                <a class="dropdown-item" value='cg'>cg</a>
-                                                <a class="dropdown-item" value='mg'>mg</a>
+                                            <div class="dropdown-menu">
+                                                <option class="dropdown-item" value='kg'>kg</option>
+                                                <option class="dropdown-item" value='hg'>hg</option>
+                                                <option class="dropdown-item" value='dag'>dag</option>
+                                                <option class="dropdown-item" value='dg'>dg</option>
+                                                <option class="dropdown-item" value='cg'>cg</option>
+                                                <option class="dropdown-item" value='mg'>mg</option>
                                             </div>
                                         </div>
                                     </div> 
@@ -279,20 +281,21 @@
             
                                         <input class="form-control" name="valor_volume" type="text" placeholder="Volume da solução" onblur="thus.placeholder" id="valor_volume">
 
-                                        <div class="dropdown">
-                                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="volume_unidade">Un. de volume</a>
-
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                <a class="dropdown-item" value='kg'>kl</a>
-                                                <a class="dropdown-item" value='hg'>hl</a>
-                                                <a class="dropdown-item" value='dag'>dal</a>
-                                                <a class="dropdown-item" value='dg'>dl</a>
-                                                <a class="dropdown-item" value='cg'>cl</a>
-                                                <a class="dropdown-item" value='mg'>ml</a>
+                                        <div class="btn-group">
+                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="volume_unidade">
+                                                Uni. volume
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                    <option class="dropdown-item" value='hg'>hl</option>
+                                                    <option class="dropdown-item" value='dag'>dal</option>
+                                                    <option class="dropdown-item" value='dg'>dl</option>
+                                                    <option class="dropdown-item" value='cg'>cl</option>
+                                                    <option class="dropdown-item" value='mg'>ml</option>
                                             </div>
                                         </div>
-                                        </div>
+                                     
                                     </div>
+                                </div>
                                 </div>
                             </form>
                         <button onclick="conversão_unidade_volume()" class="btn_1"> Calcular</button>
@@ -305,7 +308,6 @@
         <img src="img/animate_icon/Shape-1.png" alt="" class="feature_icon_1">
         <img src="img/animate_icon/shape.png" alt="" class="feature_icon_4">
     </section>
-    
 
     <!--::footer_part start::-->
  <footer class="footer_part">
