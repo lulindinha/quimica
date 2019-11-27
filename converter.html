@@ -32,10 +32,16 @@
 <body>
     <!-- Pop up da resposta -->
     <div id="popup" style="text-align:center; vertical-align: middle; width: 50vw; height: 50vh; margin: 25vh 25vw; position: fixed; z-index: 4000000; background-color:white;padding: 17vh 0 0 0; border-radius: 20px; border: 4px black solid; visibility: hidden;" >
-        <h3>Resultado: <br><span id="result"></span></h3><br><br><br>
+        <h3>Resultado em gramas (g): <br><span id="result"></span></h3><br><br><br>
         <button id="feche" onclick="fechar()" class="btn_1">Fechar</button>
     </div>
     
+    <!-- Pop up da resposta -->
+    <div id="popup2" style="text-align:center; vertical-align: middle; width: 50vw; height: 50vh; margin: 25vh 25vw; position: fixed; z-index: 4000000; background-color:white;padding: 17vh 0 0 0; border-radius: 20px; border: 4px black solid; visibility: hidden;" >
+        <h3>Resultado em litros (l): <br><span id="result2"></span></h3><br><br><br>
+        <button id="feche" onclick="fechar2()" class="btn_1">Fechar</button>
+    </div>
+
     <!--::header part start::-->
      <a href="https://ifrs.edu.br/vacaria" target="_blank">
         <img id="logo_if" src="img/logo_ifrs.png" height="70px" style="border-radius: 100%; bottom:20px; right:20px; position:fixed; z-index:30000;">
@@ -134,10 +140,8 @@
                                             <label for="exampleFormControlSelect1">Unidade de massa</label>
                                             <select id="massa_unidade">
                                               <option value='kg'>kg</option>
-                                              <option value='hg'>hg</option>
-                                              <option value='dag'>dag</option>
-                                              <option value='dg'>dg</option>
                                               <option value='mg'>mg</option>
+                                              <option value='g'>g</option>
                                             </select>
                                         </div>
                                     </div> 
@@ -169,11 +173,9 @@
                                         <div class="form-group">
                                                 <label for="exampleFormControlSelect1">Unidade de volume</label>
                                                 <select  id="volume_unidade" >
-                                                  <option value='kl'>kg</option>
-                                                  <option value='hl'>hg</option>
-                                                  <option value='dal'>dag</option>
-                                                  <option value='dl'>dg</option>
-                                                  <option value='ml'>mg</option>
+                                                  <option value='l'>L</option>
+                                                  <option value='ml'>ml</option>
+                                                  <option value='dm3'>dm&#x00B3</option>
                                                 </select>
                                               </div>
                                         </div>
