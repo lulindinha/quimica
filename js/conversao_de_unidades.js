@@ -4,7 +4,7 @@ function conversao_unidade_massa(){
 	valor_massa = parseFloat(document.getElementById('valor_massa').value);
 	var massa_unidade = document.getElementById("massa_unidade");
 	
-	console.log(valor_massar);
+	console.log(valor_massa);
 
 	if (massa_unidade.options[massa_unidade.selectedIndex].value == 'kg') {
 		calculo = (valor_massa * 1000);
